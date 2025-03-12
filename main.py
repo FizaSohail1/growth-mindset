@@ -53,7 +53,7 @@ if st.button("Save Reflection"):
     st.session_state.reflections.append((date.today(), reflection))
     st.success("Reflection saved!")
 
-st.title("📈 Progress Tracker")
+st.header("📈 Progress Tracker")
 if "reflections" in st.session_state and st.session_state.reflections:
     for entry in st.session_state.reflections:
         st.write(f"📅 {entry[0]}: {entry[1]}")
